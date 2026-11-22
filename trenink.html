@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ukázkový tréninkový plán pro začátečníky.">
+  <title>FitZone | Tréninkový plán</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="FitZone, úvodní stránka"><span class="logo-mark">F</span> FIT<span>ZONE</span></a>
+    <button class="menu-toggle" aria-label="Otevřít navigaci" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Hlavní navigace"><a href="index.html">Úvod</a><a class="active" href="trenink.html">Trénink</a><a href="index.html#kontakt">Kontakt</a></nav>
+  </header>
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">TRÉNINKOVÝ PLÁN / 01</p>
+      <h1>Celé tělo.<br><span>Jednoduše.</span></h1>
+      <p>Ukázkový full-body plán pro začátečníky. Trénuj 3× týdně a mezi tréninky si dopřej den odpočinku.</p>
+    </section>
+    <section class="section workout-section">
+      <div class="section-heading"><p class="eyebrow">PLÁN A</p><h2>Tvůj trénink.</h2><p>Vyber si cvik a označ ho po dokončení.</p></div>
+      <div class="workout-list">
+        <label class="workout-item"><input type="checkbox"><span class="exercise-num">01</span><span class="exercise"><strong>Bench press</strong><small>Prsa · triceps · přední ramena</small></span><span class="sets">3 × 8–10</span></label>
+        <label class="workout-item"><input type="checkbox"><span class="exercise-num">02</span><span class="exercise"><strong>Stahování kladky</strong><small>Záda · biceps</small></span><span class="sets">3 × 10–12</span></label>
+        <label class="workout-item"><input type="checkbox"><span class="exercise-num">03</span><span class="exercise"><strong>Leg press</strong><small>Nohy · hýždě</small></span><span class="sets">3 × 10–12</span></label>
+        <label class="workout-item"><input type="checkbox"><span class="exercise-num">04</span><span class="exercise"><strong>Shoulder press</strong><small>Ramena · triceps</small></span><span class="sets">3 × 8–10</span></label>
+        <label class="workout-item"><input type="checkbox"><span class="exercise-num">05</span><span class="exercise"><strong>Bicepsový zdvih</strong><small>Biceps</small></span><span class="sets">2 × 12</span></label>
+        <label class="workout-item"><input type="checkbox"><span class="exercise-num">06</span><span class="exercise"><strong>Plank</strong><small>Střed těla</small></span><span class="sets">3 × 30 s</span></label>
+      </div>
+      <div class="progress-wrap"><div class="progress-top"><span>Dokončení tréninku</span><strong id="progress-text">0 / 6</strong></div><div class="progress-track"><div id="progress-bar"></div></div><button class="reset-btn" id="reset-workout" type="button">Resetovat trénink ↺</button></div>
+    </section>
+    <section class="tip-section"><span class="tip-mark">!</span><div><p class="eyebrow">NEZAPOMEŇ</p><h2>Nejdřív technika,<br>potom váha.</h2><p>Před tréninkem se 5–10 minut zahřej. Zvol zátěž, se kterou zvládneš všechna opakování správně. Pokud si nejsi jistý technikou, požádej trenéra o kontrolu.</p></div></section>
+  </main>
+  <footer><a class="logo" href="index.html"><span class="logo-mark">F</span> FIT<span>ZONE</span></a><p>© <span id="year"></span> FitZone · Školní projekt vytvořený pomocí HTML, CSS a JavaScriptu.</p></footer>
+</body>
+</html>

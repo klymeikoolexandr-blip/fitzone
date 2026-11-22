@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitZone - jednoduchý průvodce fitness a silovým tréninkem.">
+  <title>FitZone | Začni trénovat</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="FitZone, úvodní stránka"><span class="logo-mark">F</span> FIT<span>ZONE</span></a>
+    <button class="menu-toggle" aria-label="Otevřít navigaci" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Hlavní navigace">
+      <a class="active" href="index.html">Úvod</a>
+      <a href="trenink.html">Trénink</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">SÍLA • DISCIPLÍNA • PROGRES</p>
+        <h1>Silnější každý<br><span>den.</span></h1>
+        <p class="hero-text">Začni s jednoduchým plánem, nauč se správnou techniku a posouvej své hranice krok za krokem.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="trenink.html">Prohlédnout trénink <span>↗</span></a>
+          <a class="btn btn-ghost" href="#principy">Základní principy</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>3×</strong><span>trénink týdně</span></div>
+          <div><strong>45–60</strong><span>minut na trénink</span></div>
+          <div><strong>100%</strong><span>vlastní tempo</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Ilustrace činky a silového tréninku">
+        <div class="visual-ring"></div>
+        <div class="visual-label label-top">TRAIN SMART</div>
+        <div class="barbell">
+          <span class="plate plate-left"></span><span class="bar"></span><span class="plate plate-right"></span>
+        </div>
+        <div class="visual-label label-bottom">GET STRONGER</div>
+        <div class="visual-number">01</div>
+      </div>
+    </section>
+
+    <section class="section" id="principy">
+      <div class="section-heading">
+        <p class="eyebrow">JAK NA TO</p>
+        <h2>Začni správně.</h2>
+        <p>Dobré výsledky stojí na několika jednoduchých návycích.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon">↗</span><h3>Postupný progres</h3><p>Postupně přidávej opakování nebo zátěž. Nespěchej na úkor techniky.</p><span class="card-index">01 / 03</span></article>
+        <article class="feature-card"><span class="feature-icon">◎</span><h3>Čistá technika</h3><p>Každý pohyb prováděj kontrolovaně a v rozsahu, který zvládneš bezpečně.</p><span class="card-index">02 / 03</span></article>
+        <article class="feature-card"><span class="feature-icon">✦</span><h3>Regenerace</h3><p>Spánek, kvalitní jídlo a odpočinek jsou součástí tréninkového plánu.</p><span class="card-index">03 / 03</span></article>
+      </div>
+    </section>
+
+    <section class="bmi-section">
+      <div class="bmi-copy"><p class="eyebrow">MALÝ NÁSTROJ</p><h2>Kalkulačka<br><span>BMI</span></h2><p>Orientačně si vypočítej index tělesné hmotnosti. BMI je pouze základní ukazatel a u sportovců nemusí přesně vypovídat o složení těla.</p></div>
+      <form class="bmi-card" id="bmi-form">
+        <label for="height">Výška (cm)</label><input id="height" type="number" min="100" max="250" placeholder="Např. 175" required>
+        <label for="weight">Hmotnost (kg)</label><input id="weight" type="number" min="25" max="300" step="0.1" placeholder="Např. 75" required>
+        <button class="btn btn-primary" type="submit">Vypočítat BMI <span>→</span></button>
+        <p class="bmi-result" id="bmi-result" aria-live="polite">Výsledek se zobrazí zde.</p>
+      </form>
+    </section>
+
+    <section class="contact section" id="kontakt">
+      <div><p class="eyebrow">MÁŠ CÍL?</p><h2>Tak začni<br><span>dnes.</span></h2></div>
+      <a class="btn btn-primary" href="trenink.html">Zobrazit tréninkový plán ↗</a>
+    </section>
+  </main>
+  <footer><a class="logo" href="index.html"><span class="logo-mark">F</span> FIT<span>ZONE</span></a><p>© <span id="year"></span> FitZone · Školní projekt vytvořený pomocí HTML, CSS a JavaScriptu.</p></footer>
+</body>
+</html>
